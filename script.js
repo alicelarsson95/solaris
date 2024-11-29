@@ -44,7 +44,7 @@ sun.addEventListener('click', async () => {
     const key = await getApiKey()
     const apiData = await getPlanet(key);
 
-    console.log(apiData);
+
 
     displayInfo(apiData.bodies[0])
   
@@ -200,14 +200,34 @@ neptunus.addEventListener('click', async () => {
   planetSite.style.display = 'flex'
 })
 
+const planetBlue = document.querySelector('.planet-blue')
+  planetBlue.addEventListener('click', () => {
+  planetSite.style.display = 'none'
+  startSite.style.display = 'block'
+})
+
 
 const startSite = document.querySelector('.site-wrapper')
 const planetSite = document.querySelector('.site-wrapper2')
-const planetHeader = document.querySelector('.header.header2')
-const subHeader = document.querySelector('')
+const planetHeader = document.querySelector('.header2')
+const subHeader = document.querySelector('.sub-header2')
+const mainText = document.querySelector('.main-text')
+const infoCircum = document.querySelector('.info-circumference')
+const maxTemp = document.querySelector('.max-temp')
+const infoDistance = document.querySelector('.distance-sun')
+const minTemp = document.querySelector('.min-temp')
+const infoMoon = document.querySelector('.info-moon')
 
 const displayInfo = (infoBodies) => {
 
-  planetHeader.innerText = infoBodies.name
-  console.log(infoBodies);
+planetHeader.innerText = infoBodies.name.toUpperCase()
+subHeader.innerText = infoBodies.latinName.toUpperCase()
+mainText.innerText = infoBodies.desc
+infoCircum.innerText = infoBodies.circumference
+maxTemp.innerText = infoBodies.temp.day
+infoDistance.innerText = infoBodies.distance
+minTemp.innerText = infoBodies.temp.night
+infoMoon.innerText = infoBodies.moons
+
+
 }

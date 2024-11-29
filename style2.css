@@ -2,33 +2,106 @@
 .site-wrapper2 {
 background-image: url(starss.png);
 width: 100%; 
-height: 30rem;
+height: 60rem;
 background-size: cover; 
 background-position: center; 
 background-repeat: no-repeat; 
 display: none;
+justify-content: center;
 }
 
 .planet-blue {
 position: absolute;
 background-color:rgba(71, 147, 224, 0.711);
-height: 35rem;
-width: 30rem;
+height: 59rem;
+width: 45rem;
 border-radius: 99%;
-left: -25rem;
-box-shadow: 10px 10px 40px rgba(27, 91, 187, 0.7);
-top: -1rem;
+left: -37rem;
+box-shadow: 20px 20px 60px rgba(27, 91, 187, 0.7);
+cursor: pointer;
 }
+
+.planet-blue:hover {
+transform: scale(1.1);
+box-shadow: 0 20px 40px rgba(87, 111, 230, 0.555);
+transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.information {
+display: flex;
+flex-direction:column;
+align-items: flex-start;
+justify-content: center;
+max-width: 50%;
+max-height: 100vh;
+}
+
 
 .planet-info-part {
 display: flex;
-justify-content: center;
-align-items: center;
+justify-content: flex-start;
+align-items: flex-start;
+flex-direction: column;
 }
 
 .info-header {
 font-family: 'Secular One';
 color: white;
+font-size: 1.5rem;
+font-weight: 100;
+
+}
+
+.main-text {
+font-family: 'Roboto Condensed';
+color: aliceblue;
+font-weight: 200;
+font-size: 1.5rem;
+margin-top: 0.3;
+}
+
+.info-text {
+font-family: 'Roboto Condensed';
+color: aliceblue;
+font-size: 1.4rem;
+font-weight: 100; 
+margin-top: -1rem;
+letter-spacing: 0.2rem;;
+}
+
+.data-info {
+display: grid;
+grid-template-columns: repeat(2, 16rem);
 }
 
 
+.line {
+display: flex;
+width: 40rem;
+border-radius: 99rem;
+height: 1px;
+background-color: rgba(255, 255, 255, 0.382);
+}
+
+.moon-info-con {
+display: grid;
+grid-column: 1;
+}
+
+.info-moon {
+overflow: auto;
+}
+
+.info-moon::-webkit-scrollbar {
+height: 7px;
+}
+
+.info-moon::-webkit-scrollbar-thumb {
+background: #304976ad; 
+border-radius: 2px; 
+}
+
+.info-moon::-webkit-scrollbar-track {
+background: #f1f1f1; 
+border-radius: 5px;
+}
