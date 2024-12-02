@@ -121,16 +121,16 @@ transform: translateY(-20%) rotate(-30deg) translateX(10%)
 .planet-7 {
 background-color: aliceblue;
 border-radius: 99%;
-height: 3.1rem;
-width: 3.1rem;
+height: 4rem;
+width: 4rem;
 cursor: pointer;
 }
 
 .planet-8 {
 background-color: rgb(128, 131, 135);
 border-radius: 99%;
-height: 3.1rem;
-width: 3.1rem;
+height: 4rem;
+width: 4rem;
 cursor: pointer;
 
 }

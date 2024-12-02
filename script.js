@@ -200,7 +200,7 @@ neptunus.addEventListener('click', async () => {
   planetSite.style.display = 'flex'
 })
 
-const planetBlue = document.querySelector('.planet-blue')
+const planetBlue = document.querySelector('.planet-blue2')
   planetBlue.addEventListener('click', () => {
   planetSite.style.display = 'none'
   startSite.style.display = 'block'
@@ -223,10 +223,10 @@ const displayInfo = (infoBodies) => {
 planetHeader.innerText = infoBodies.name.toUpperCase()
 subHeader.innerText = infoBodies.latinName.toUpperCase()
 mainText.innerText = infoBodies.desc
-infoCircum.innerText = infoBodies.circumference
-maxTemp.innerText = infoBodies.temp.day
-infoDistance.innerText = infoBodies.distance
-minTemp.innerText = infoBodies.temp.night
+infoCircum.innerText = infoBodies.circumference.toLocaleString() + " km"
+maxTemp.innerText = infoBodies.temp.day + "C"
+infoDistance.innerText = infoBodies.distance.toLocaleString() + " km"
+minTemp.innerText = infoBodies.temp.night + "C"
 infoMoon.innerText = infoBodies.moons
 
 

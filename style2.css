@@ -2,7 +2,7 @@
 .site-wrapper2 {
 background-image: url(starss.png);
 width: 100%; 
-height: 60rem;
+height: 70rem;
 background-size: cover; 
 background-position: center; 
 background-repeat: no-repeat; 
@@ -12,16 +12,36 @@ justify-content: center;
 
 .planet-blue {
 position: absolute;
-background-color:rgba(71, 147, 224, 0.711);
+background-color: #428dd43b;
 height: 59rem;
 width: 45rem;
 border-radius: 99%;
-left: -37rem;
-box-shadow: 20px 20px 60px rgba(27, 91, 187, 0.7);
-cursor: pointer;
+left: -35rem;
 }
 
-.planet-blue:hover {
+.planet-blue2 {
+position: relative;
+background-color:rgba(38, 80, 121, 0.384);
+height: 59rem;
+width: 45rem;
+border-radius: 99%;
+left: -70rem;
+cursor: pointer;
+box-shadow: 10px 10px 40px rgba(19, 35, 88, 0.7);
+}
+
+.planet-blue3 {
+position: absolute;
+background-color: #428ED4;
+height: 59rem;
+width: 59rem;
+border-radius: 99%;
+left: -52rem;
+}
+
+.planet-blue2:hover,
+.planet-blue:hover
+ {
 transform: scale(1.1);
 box-shadow: 0 20px 40px rgba(87, 111, 230, 0.555);
 transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -32,8 +52,9 @@ display: flex;
 flex-direction:column;
 align-items: flex-start;
 justify-content: center;
-max-width: 50%;
+max-width: 38%;
 max-height: 100vh;
+margin-left: -45rem;
 }
 
 
@@ -56,8 +77,10 @@ font-weight: 100;
 font-family: 'Roboto Condensed';
 color: aliceblue;
 font-weight: 200;
-font-size: 1.5rem;
-margin-top: 0.3;
+font-size: 1.4rem;
+line-height: 1.6;
+overflow-y: auto;
+max-height: 16rem;
 }
 
 .info-text {
@@ -66,7 +89,7 @@ color: aliceblue;
 font-size: 1.4rem;
 font-weight: 100; 
 margin-top: -1rem;
-letter-spacing: 0.2rem;;
+letter-spacing: 0.2rem;
 }
 
 .data-info {
@@ -77,7 +100,7 @@ grid-template-columns: repeat(2, 16rem);
 
 .line {
 display: flex;
-width: 40rem;
+width: 45rem;
 border-radius: 99rem;
 height: 1px;
 background-color: rgba(255, 255, 255, 0.382);
@@ -93,7 +116,7 @@ overflow: auto;
 }
 
 .info-moon::-webkit-scrollbar {
-height: 7px;
+height: 12px;
 }
 
 .info-moon::-webkit-scrollbar-thumb {
@@ -102,6 +125,20 @@ border-radius: 2px;
 }
 
 .info-moon::-webkit-scrollbar-track {
+background: #f1f1f1; 
+border-radius: 5px;
+}
+
+.main-text::-webkit-scrollbar {
+width: 0.8rem;
+}
+    
+.main-text::-webkit-scrollbar-thumb {
+background: #304976ad; 
+border-radius: 2px; 
+}
+    
+.main-text::-webkit-scrollbar-track {
 background: #f1f1f1; 
 border-radius: 5px;
 }
