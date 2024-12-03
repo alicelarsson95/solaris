@@ -1,3 +1,5 @@
+/*Exporterar asynkrona funktioner: en för att hämta API-nyckeln och en för att hämta planetdata med nyckeln.*/
+ 
 export const getApiKey = async () => {
     const url = "https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys";
   

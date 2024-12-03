@@ -1,3 +1,5 @@
+/* Importerar planetinformation från api.js och visar den på planetsidan vid klick.*/
+  
 import { planetElements, elements } from "./elements.js";
 import { getApiKey, getPlanet } from "./api.js";
 
@@ -9,7 +11,7 @@ const handlePlanet = async (planetIndex) => {
 
     displayInfo(apiData.bodies[planetIndex]);
   } catch (error) {
-    console.error("Error occurred:", error);
+    console.error("An unexpected error has occurred:", error);
   }
 
   elements.startSite.style.display = "none";
