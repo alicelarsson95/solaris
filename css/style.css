@@ -161,6 +161,27 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+@media (max-width: 1600px) {
+
+    .planet-1,
+    .planet-2,
+    .planet-3,
+    .planet-4,
+    .planet-5,
+    .planet-6,
+    .planet-7,
+    .planet-8 {
+        margin-top: -5rem;
+    }
+
+    .planet-sun {
+        margin-bottom: 10rem;
+        height: 45rem;
+        width: 45rem;
+    }
+
+}
+
 
 
 
