@@ -35,5 +35,10 @@ const displayInfo = (infoBodies) => {
   elements.infoDistance.innerText = infoBodies.distance.toLocaleString() + " km";
   elements.maxTemp.innerText = infoBodies.temp.day + "C";
   elements.minTemp.innerText = infoBodies.temp.night + "C";
-  elements.infoMoon.innerText = infoBodies.moons;
+  if (!infoBodies.moons || infoBodies.moons.length === 0) {
+    elements.infoMoon.innerText = "Har inga månar";
+} else {
+    elements.infoMoon.innerText = infoBodies.moons
+}
+
 };
